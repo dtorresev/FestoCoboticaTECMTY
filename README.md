@@ -24,8 +24,13 @@ Paso a paso:
 
 1. Crear un proyecto nuevo. (V20, V18, V17, V16).
 2. Tener conectados: Robot, PLC, PC mediante ethernet o red WiFi.
-3. Open Project > Project Tree > Online access: Verificar que el dispositivo (Robot) están agregados. (min 22.08 Webinar) </br> <img src = "files/device_verif.png">
-4. 
+3. Open Project > Project Tree > Online access: Verificar que el dispositivo (Robot) están agregados. (min 22.08 Webinar) Si no se muestra la dirección MAC [XX-XX-XX-XX-XX-XX] del dispositivo expandir cada dispositivo individualmente y se despliega la información. </br> <img src = "files/device_verif.png"> </br>
+3.1. Verificar que la dirección IPv4 sea fija y esté en la misma red que el PLC y el UR. </br> <img src = "files/IPV4_info.png"  width ="50%">
+4. Accessible Device [XX-XX-XX-XX-XX-XX] > Online & Diagnostics > Functions > Assign IP Address. Asignar una dirección IP al PLC para estar en la misma red. <img src = "files/IP_assign.png" width = "75%"> </br>
+Check azul indica la transferencia correcta de los parámetros (Esquina inferior derecha). Si no aparece la dirección IP en el dispositivo: Online Access > Ethernet Connection > Update accessible devices. </br><img src = "files/IP_assign_2.png" width = "75%">
+5. Asignar nombre PROFINET
+
+
 ### FESTO Station
 
 

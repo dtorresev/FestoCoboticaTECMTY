@@ -54,8 +54,22 @@ Check azul indica la transferencia correcta de los parámetros (Esquina inferior
 14. En **Devices&Networks> Device View> Device overview** agregar los módulos (min. 45:44) para obtener y enviar información entre el UR y el PLC.    
 <br> <img src = "files/UR_modules.png" width = "90%"> </br>
 
-15. En Project Tree> Devices> Project> PLC_1 [CPU ]> External source files> Add new external file. Seleccionar la carpeta creada e integrar el archivo .udt para posteriormente generar bloques a partir del archivo.
-<br> <img src = "files/udt_install.png" width = "90%"> </br>
+15. En **Project Tree> Devices> Project> PLC_1 [CPU ]> External source files> Add new external file**. Seleccionar la carpeta creada e integrar el archivo .udt para posteriormente generar bloques a partir del archivo y verificar que se crearon correctamente.
+<br> <img src = "files/udt_install.png" width = "50%"><img src = "files/udt_verify.png" width = "40%"> </br>
+
+16. Crear una nueva tabla de tags y carpetas de nombre _Robot To PLC_ y _PLC To Robot_. Las direcciones se asignan automáticamente, lo más relevante son los data types **UR_T2O** y **UR_O2T**. 
+  <br> <img src = "files/UR_tags.png" width = "90%"> </br>
+
+17. Guardar, compilar y verificar que no hayan errores y descargar al dispositivo. <img src = "files/save.png" width = "10%"> <img src = "files/compile.png" width = "3%"> <img src = "files/d2dev.png" width = "3%"> </br>
+
+18. Cargar al PLC.
+
+<br> <img src = "files/ed2dev.png" width = "75%"> </br>
+Seleccionar module
+<br> <img src = "files/start_mod.png" width = "75%"> </br>
+
+19. Desde el tag table monitorear los valores con monitor all. <img src = "files/monitor.png" width = "2%"> </br>
+
 
 ### FESTO Station
 

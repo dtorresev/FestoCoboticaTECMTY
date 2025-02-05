@@ -36,6 +36,26 @@ Check azul indica la transferencia correcta de los parámetros (Esquina inferior
 7.1 Activar licencia de TIA Portal. </br> <img src = "files/license.png" width = "50%">
 8. **Project Tree > Project > PLC_1 [Unspecific CPU 1500 > Hardware detection for PLC_1] > Start Search** : Detectar la configuración del PLC de manera automática. </br> <img src = "files/detect_PLC.png" width = "50%"></br> <img src = "files/detect_PLC_2.png" width = "50%"> </br>
 9. **PLC_1 > Properties > PROFINET Interface [x1] > Properties > Ethernet Addresses** </br> <img src = "files/PROFINET_Properties.png" width = "50%"> </br>
+9.1 **Interface networked with** En subnet dar click en "Add new subnet". </br>
+9.2 **Internet protocol version 4 (IPv4)** Set IP address in the project (datos pre-establecidos).</br>
+9.3 **PROFINET** **Desactivar** Generate PROFINET device name automatically. Reemplazar por nombre preestablecido de dispositivo. (Ejemplo: **plc_1**). Dar click nuevamente en Tab para generar nombre convertido. </br> <img src = "files/PROFINET_Properties_PROFINET.png" > </br>
+10. **Save Project** Seleccionar carpeta de PLC_1(CPU #####) y dar click en Save Project para guardar cambios en la configuración. 
+</br> <img src = "files/D&N.png" width = "90%"> </br>
+</br>Una vez establecido el dispositivo y la subred, se agrega el robot con los archivos descargados.</br></br>
+
+11. **Options > Manage general station description files (GSD)** Seleccionar ruta de acceso para los archivos descargados (1 carpeta con 4 docs descomprimidos) e instalar el dispositivo.</br> <img src = "files/gsd_install.png" width = "90%"> </br>
+</br> <img src = "files/gsd_install_2.png" width = "90%"> </br>
+
+12. Una vez instalado el dispositvo, verificar en **Hardware Catalog> Other field devices> PROFINET IO> I/O> Universal Robots A/S> Collaborative Robot> V1.0** que se encuentre el dispositivo instalado, arrastrar hasta la _Network View_ y conectar a la red PROFINET. </br> <img src = "files/UR_NETWORK_1.png" width = "90%"> </br>
+</br> <img src = "files/UR_NETWORK_2.png" width = "90%"> </br>
+
+13. Verificar el dispositivo en la red y renombrar nombre PROFINET. </br> <img src = "files/UR_DEVICE_PROPERTIES.png" width = "90%"> </br><br> <img src = "files/UR_PROFINET.png" width = "90%"> </br>
+
+14. En **Devices&Networks> Device View> Device overview** agregar los módulos (min. 45:44) para obtener y enviar información entre el UR y el PLC.    
+<br> <img src = "files/UR_modules.png" width = "90%"> </br>
+
+15. En Project Tree> Devices> Project> PLC_1 [CPU ]> External source files> Add new external file. Seleccionar la carpeta creada e integrar el archivo .udt para posteriormente generar bloques a partir del archivo.
+<br> <img src = "files/udt_install.png" width = "90%"> </br>
 
 ### FESTO Station
 

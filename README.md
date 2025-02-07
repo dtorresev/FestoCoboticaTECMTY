@@ -70,6 +70,8 @@ Seleccionar module
 
 19. Desde el tag table monitorear los valores con monitor all. <img src = "files/monitor.png" width = "2%"> </br>
 
+20. Realizar un bloque en escalera para enlazar memorias de control con los registros a maniplar del UR, al final deberá aparecer algo así.
+<br> <img src = "files/LDR_program.png" width = "75%"> </br>
 
 ### FESTO Station
 

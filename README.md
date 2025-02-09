@@ -88,5 +88,17 @@ Herramientas:
 Montar el robot UR atornillando con una llave allen de 5mm el tornillo superior derecho (visto desde la salida del cable) a la **ranura número 7** de la estación y el tornillo inferior izquierdo a la **ranúra número 7**.
 <br> <img src = "files/UR_montaje.png" width = "100%"> </br>
 
-Conectar cable
+Conectar cable al controlador, embona y se asegura.
+<br> <img src = "files/UR_cables.png" width = "50%"><img src = "files/UR_CABLE_2.png" width = "50%" height= "180"> </br>
+
+Conectar cable de alimentación de 110 VAC. 
+<br> <img src = "files/UR_PWR.png" width = "100%"> </br>
+
+Colocar un tornillo tipo perno a la parte de acoplamiento y atornillar con una llave allen de 1.5 mm hasta que es visible en uno de los barrenos internos, seguido, realizar lo mismo para el barreno del lado contrario.
+
+<br> <img src = "files/UR_Gripper1.png" width = "100%"> </br> 
+
+Montar gripper y atornillar con llave de 3mm hasta que la cabeza quede al raz de la brida. 
+
+<br> <img src = "files/UR_Gripper2.png" width = "100%"> </br> 
 ### UR Setup

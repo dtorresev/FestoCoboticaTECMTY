@@ -84,6 +84,7 @@ Herramientas:
 - Desarmador plano 1.5
 - Perico
 
+#### Instalación UR
 <a href = 'files/Installation Guide V1.3.3_ENGLISH.pdf'>Guía de Instalación (Inglés) </a> </br>
 Montar el robot UR atornillando con una llave allen de 5mm el tornillo superior derecho (visto desde la salida del cable) a la **ranura número 7** de la estación y el tornillo inferior izquierdo a la **ranúra número 7**.
 <br> <img src = "files/UR_montaje.png" width = "100%"> </br>
@@ -92,13 +93,27 @@ Conectar cable al controlador, embona y se asegura.
 <br> <img src = "files/UR_cables.png" width = "50%"><img src = "files/UR_CABLE_2.png" width = "50%"> </br>
 
 Conectar cable de alimentación de 110 VAC. 
-<br> <img src = "files/UR_PWR.png" width = "75%"> </br>
+<br> <img src = "files/UR_PWR.png" width = "50%"> </br>
+
+#### Gripper 
+<a href = "files/EHPS-_-A-RA1_operating-instr_2021-05b_8156677g1 (1).pdf" >Gripper Manual </a> </br>
 
 Colocar un tornillo tipo perno a la parte de acoplamiento y atornillar con una llave allen de 1.5 mm hasta que es visible en uno de los barrenos internos, seguido, realizar lo mismo para el barreno del lado contrario.
-
-<br> <img src = "files/UR_Gripper1.png" width = "75%"> </br> 
-
+<br> <img src = "files/UR_Gripper1.png" width = "50%"> </br> 
 Montar gripper y atornillar con llave de 3mm hasta que la cabeza quede al raz de la brida. 
+<br> <img src = "files/UR_Gripper2.png" width = "50%"> </br> 
+Una vez colocado el gripper, apretar los pernos laterales y acoplar y fijar con 4 tornillos el gripper con una llave allen de 5mm.
+<br> <img src = "files/UR_acoplar.png" width = "50%">
+<img src = "files/UR_Gripper3.png" width = "50%"> 
+<img src = "files/UR_Mordazas.png" width = "50%">
 
-<br> <img src = "files/UR_Gripper2.png" width = "75%"> </br> 
+#### Montaje estación FESTO
+<a href = "files/Manual MPS.pdf" >Manual MPS  </a>
+> A partir de la página 35 explicación en Inglés
+
+Componentes: 
+- XG1 Conector de entradas y salidas DE-15.</br> <img src = "files/DE-15.png" width = "50%">
+- C1BG3 Limit Switch quee detecta la presencia de resortes </br>  <img src = "files/F_switch.png" width = "50%">
+- C1BG1 y C1BG2 sensores de fin de carrera de un cilindro de doble efecto.</br> <img src = "files/C1BG1.png" width = "50%">
+- C1MB1 Válvula neumática monoestable </br> <img src = "files/C1MB1.png" width = "50%">
 ### UR Setup

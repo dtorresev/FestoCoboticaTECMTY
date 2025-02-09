@@ -84,7 +84,7 @@ Herramientas:
 - Desarmador plano 1.5
 - Perico
 
-<a href = files/Installation-Guide-V1.3.3_ENGLISH.pdf>Guía de Instalación (Inglés) </a> </br>
+<a href = files/Installation Guide V1.3.3_ENGLISH.pdf>Guía de Instalación (Inglés) </a> </br>
 Montar el robot UR atornillando con una llave allen de 5mm el tornillo superior derecho (visto desde la salida del cable) a la **ranura número 7** de la estación y el tornillo inferior izquierdo a la **ranúra número 7**.
 <br> <img src = "files/UR_montaje.png" width = "100%"> </br>
 

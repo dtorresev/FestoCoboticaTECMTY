@@ -1,4 +1,20 @@
 # Festo Cobótica TEC MTY
+
+# Tabla de Contenidos  
+
+  - [About](#about)  
+  - [Tutorial](#tutorial)  
+    - [SIEMENS PLC](#siemens-plc)  
+      - [Paso a paso](#paso-a-paso)  
+  - [FESTO Station](#festo-station)  
+    - [Herramientas](#herramientas)  
+    - [Instalación UR](#instalación-ur)  
+    - [Gripper](#gripper)  
+    - [Montaje estación FESTO](#montaje-estación-festo)  
+    - [Montar módulos](#montar-módulos)  
+    - [Diagrama de conexiones](#diagrama-de-conexiones)  
+  - [UR Setup](#ur-setup)
+
 ## About
 
 ## Tutorial
@@ -20,7 +36,7 @@ Download:
 - <a href = "https://s3-eu-west-1.amazonaws.com/ur-support-site/160022/UR_datastruct.udt" >  UR_datastruct.udt </a> Simplifica el proceso de mapeo de los registros a utilizar.
 - <a href = "https://s3-eu-west-1.amazonaws.com/ur-support-site/160022/pn-iomessage.pdf" >  pn-iomessage.pdf </a> PROFINET I/O message, describe acerca de los registros que se van a compartir.
 
-Paso a paso:
+#### Paso a paso:
 
 1. Crear un proyecto nuevo. (V20, V18, V17, V16).
 2. Tener conectados: Robot, PLC, PC mediante ethernet o red WiFi.
@@ -76,7 +92,7 @@ Seleccionar module
 ### FESTO Station
 > Comienza en el 96:48
 
-Herramientas: 
+#### Herramientas: 
 - Pinzas para pelar cable y corte de cinchos
 - Llave Allen 5 (mm)
 - Llave Allen 3 (mm)
@@ -111,9 +127,50 @@ Una vez colocado el gripper, apretar los pernos laterales y acoplar y fijar con 
 <a href = "files/Manual MPS.pdf" >Manual MPS  </a>
 > A partir de la página 35 explicación en Inglés
 
+</br> <img src = "files/handlingmodule.png" width = "75%">
+</br> <img src = "files/assemblymodule.png" width = "75%">
+
 Componentes: 
-- XG1 Conector de entradas y salidas DE-15.</br> <img src = "files/DE-15.png" width = "50%">
-- C1BG3 Limit Switch quee detecta la presencia de resortes </br>  <img src = "files/F_switch.png" width = "50%">
+- XG1 Conector de entradas y salidas DE-15.</br> <img src = "files/XG1.png" width = "50%">
+- C1BG3 Limit Switch quee detecta la presencia de resortes. </br>  <img src = "files/F_switch.png" width = "50%">
 - C1BG1 y C1BG2 sensores de fin de carrera de un cilindro de doble efecto.</br> <img src = "files/C1BG1.png" width = "50%">
-- C1MB1 Válvula neumática monoestable </br> <img src = "files/C1MB1.png" width = "50%">
+- C1MB1 Válvula neumática monoestable. </br> <img src = "files/C1MB1.png" width = "50%">
+
+- XG2 Conector de entradas y salidas DE-15.</br> <img src = "files/XG2.png" width = "50%">
+- C2BG3 Sensor óptico que detecta la presencia de tapas. </br> <img src = "files/C2BG3.png" width = "50%">
+- C2BG1 y C2BG2 sensores de fin de carrera de un cilindro de doble efecto.</br> <img src = "files/C2BG1.png" width = "35%">
+- C2MB1 Válvula neumática monoestable. </br> <img src = "files/C2MB1.png" width = "25%">
+
+- **Clema Centronik??** Se conecta al controlador.  </br> <img src = "files/centro.png" width = "75%"> 
+
+#### Montar módulos
+
+Montar módulo de manipulación a la derecha del robot y apretar con llave allen 5mm. El módulo de ensamble a la izquierda del robot
+</br> <img src = "files/manmodule.png" width = "50%">
+<img src = "files/assmodule.png" width = "50%"> </br>
+
+Colocar embolos de colores y almacén apilador en el módulo. 
+</br> <img src = "files/refill.png" width = "50%"></br> 
+
+Conectar el sensor que proveniente de la clema XG1 al sensor BG1.
+</br> <img src = "files/xg1.png" width = "50%"></br>
+Conectar el sensor que proveniente de la clema XG2 al sensor BG2.
+</br><img src = "files/xg2.png" width = "50%"></br>
+
+Atornillar rampa de salida.
+</br><img src = "files/rampa.png" width = "50%"></br>
+
+Colocar clema central.
+</br><img src = "files/clemacentral.png" width = "50%"></br>
+
+Colocar unidad de mantenimiento.
+</br><img src = "files/mant.png" width = "50%"></br>
+
+Conexiones del centronik con cables DE-15.
+</br><img src = "files/Centr.png" width = "50%"></br>
+
+#### Diagrama de conexiones 
+</br><img src = "files/conexiones.png" width = "100%"></br>
+
+
 ### UR Setup
